@@ -727,87 +727,6 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "1",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "1",
-                                        "repeat": false
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "2",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "2",
-                                        "repeat": false
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "2",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "3",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "3",
-                                        "repeat": false
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "halt": true,
-                                        "key_code": "3",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
                                     "key_code": "4",
                                     "modifiers": {
                                         "optional": [
@@ -1327,6 +1246,102 @@
                         ]
                     },
                     {
+                        "description": "Number 1 is Cut if held down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to_after_key_up": [
+                                    {
+                                        "key_code": "1",
+                                        "repeat": false
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Number 2 is Copy if held down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to_after_key_up": [
+                                    {
+                                        "key_code": "2",
+                                        "repeat": false
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Number 3 is Paste if held down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "3",
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to_after_key_up": [
+                                    {
+                                        "key_code": "3",
+                                        "repeat": false
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "MouseButton5 to left space",
                         "manipulators": [
                             {
@@ -1581,7 +1596,7 @@
                     ]
                 }
             ],
-            "name": "Default profile",
+            "name": "Obed's Powerhouse",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
